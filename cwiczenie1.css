@@ -1,0 +1,191 @@
+body {
+    background-color: #D3D3D3;
+}
+
+#style li{
+  display: inline-block;
+}
+
+h1{
+	color: #000080;
+	font-size: 300%;
+	font-family: "Times New Roman",Georgia, Serif;
+	letter-spacing: 8px;
+}
+
+
+h2{
+	color:#212121; /*#616161;*/
+
+
+}
+
+h3{
+	color:#292929;/*#96858F;    #607d8b;*/
+
+}
+
+p{
+	color: #000011;/*#9099A2;/*#7A7A7A;  /*#757575;      #87CEFA;*/
+	text-indent: 40px;
+    font-family: "Courier New", Times, serif;
+
+}
+
+a:link{
+	color:#616161;
+
+}
+a:visited{
+	color:#9099A2;
+}
+
+p:first-letter {
+    color: #000080;
+    font-size: 200%;
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#fir{
+	background-color:red;
+}
+#sec, #thir, #fou{
+    background-color: green;
+}
+
+
+
+td {
+    padding: 15px;
+    text-align: left;
+    border: 5px solid yellow;
+    /*background-color: green;*/
+    font-size:14px;
+
+}
+
+th{
+    padding: 10px;
+    border: 5px solid yellow;
+    background-color: #6D7993;
+    text-align:center;
+    text-transform: uppercase;
+    font-size:18px;
+    color: white;
+    font-family:"Arial", Times, serif;
+
+}
+
+ol li ol li ol li{
+    list-style-type: lower-greek;
+}
+
+ol li ol li{
+    list-style-type: lower-roman;
+}
+
+ol li{
+    list-style-type: upper-roman;
+}
+
+
+#Frankfurt{
+    float:left;
+}
+
+#Hamburg{
+    float:right;
+}
+
+#wszystko{
+    position:relative;
+    /*height: 100%;*/
+    max-width:960px;
+    /*width: 100%;*/
+
+}
+
+#tytul{
+    background-color: #000080;
+    color:#D3D3D3;
+    text-align:center;
+    /*margin-left:250px;*/
+    margin-top: 0;
+    position: static;
+    width: 100%;
+}
+#Left{
+  position: absolute;
+  height: 100%;
+  background-color:#FFD700;
+  width: 250px;
+  float: left;
+
+}
+#Menu {
+    background-color:#FFD700;
+
+    display:block;
+    text-align:center;
+    float:left;
+    position:fixed;
+
+    /*bottom:0;*/
+
+    width:250px;
+
+}
+
+#Menu p{
+    background-color:#FFD700;
+    color:#000000;
+}
+
+#Menu p:first-letter{
+    color: #000000;
+    font-size: 200%;
+}
+
+#Menu ul{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+
+}
+
+#Menu li{
+    text-align:center;
+    padding: 1px;
+    margin: 1px;
+    border-color:#000000;
+    background-color:#FFD766;
+}
+
+#Menu li:hover, #Menu ul:hover{
+    background-color:red;
+
+}
+
+#Menu a:link, #Menu a:visited, #Menu a:hover, #Menu a:active{
+    cursor:default;
+}
+
+#Tresc{
+  max-width:960px;
+
+    background-color:white;
+    /*text-align: justify;*/
+    margin-left:250px;
+    overflow: auto;
+    /*position:absolute;
+
+    top:50px;
+    left:250px;*/
+
+
+}

@@ -1,0 +1,179 @@
+#Menu {
+    background-color:#FFD700;
+    display:block;
+    text-align:center;
+    position: relative;
+    overflow: auto;
+    float: none;
+    height: auto;
+    width:100%;
+    top: 50px;
+    /*margin: 0px, 100px, 10px, 10px;*/
+}
+#val{
+  display: none;
+}
+#val2{
+  display: none;
+}
+#style li{
+  display: inline-block;
+}
+#Menu p{
+    background-color:#FFD700;
+    color:#000000;
+}
+
+#Menu p:first-letter{
+    color: #000000;
+    font-size: 200%;
+}
+
+#Menu ul{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+
+}
+
+#Menu li{
+    text-align:center;
+    padding: 1px;
+    margin: 1px;
+    border-color:#000000;
+    background-color:#FFD766;
+    display: inline;
+}
+
+#Menu li:hover, #Menu ul:hover{
+    background-color:red;
+
+}
+
+#Menu a:link, #Menu a:visited, #Menu a:hover, #Menu a:active{
+    cursor:default;
+}
+#wszystko{
+  position: static;
+  width: 100%;
+  height: 100%;
+}
+
+#zawartosc{
+position: absolute;
+top: 200px;
+
+}
+
+#Tresc{
+    max-width:100%;
+    background-color:white;
+    text-align: justify;
+    max-width: 100%;
+    position: static;
+        /*position: relative;*/
+    /*top: 400px;
+    left: 0;*/
+    /*margin: 100px 0 0 0;*/
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.kolor{
+    background-color:purple;
+}
+
+
+td {
+    padding: 15px;
+    text-align: left;
+    border: 5px solid yellow;
+    background-color: green;
+    font-size:14px;
+
+}
+
+th{
+    padding: 10px;
+    border: 5px solid yellow;
+    background-color: #6D7993;
+    text-align:center;
+    text-transform: uppercase;
+    font-size:18px;
+    color: white;
+    font-family:"Arial", Times, serif;
+
+}
+
+ol li ol li ol li{
+    list-style-type: lower-greek;
+}
+
+ol li ol li{
+    list-style-type: lower-roman;
+}
+
+ol li{
+    list-style-type: upper-roman;
+}
+#tytul{
+    background-color: #000080;
+    color:#D3D3D3;
+    text-align:center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*margin: 0, 10px, 0, 10px;*/
+}
+
+#Frankfurt{
+    float:left;
+}
+
+#Hamburg{
+    float:right;
+}
+
+h1{
+	color: #000080;
+	font-size: 300%;
+	font-family: "Times New Roman",Georgia, Serif;
+	letter-spacing: 8px;
+}
+
+
+h2{
+	color:#212121; /*#616161;*/
+
+
+}
+
+h3{
+	color:#292929;/*#96858F;    #607d8b;*/
+
+}
+
+p{
+	color: #000011;/*#9099A2;/*#7A7A7A;  /*#757575;      #87CEFA;*/
+	text-indent: 40px;
+    font-family: "Courier New", Times, serif;
+
+}
+
+
+a:link{
+	color:#616161;
+
+}
+a:visited{
+	color:#9099A2;
+}
+
+p:first-letter {
+    color: #000080;
+    font-size: 200%;
+}
