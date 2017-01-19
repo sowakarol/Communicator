@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+
+ <head>
+  <title>Communicator</title>
+  <meta http-equiv="Content-Type" content="application/xtml+xml;charset=UTF-8" />
+  <script type="text/javascript" src="communicator.js"></script>
+
+</head>
+
+<body>
+  <form action="communicator.php" method="get">
+    Enable chatting<input type="checkbox" id="isEnable" onchange="ajax()"/><br />
+    <textarea id="messages" disabled="true"></textarea><br />
+    Username: <br /><input name="username" type="text" id="username"/><br />
+    Message: <br /><textarea name="toSend" id="toSend"></textarea><br />
+    <input type="button" value="send" onclick="send()">
+  </form>
+
+
+
+</body>
+</html>
