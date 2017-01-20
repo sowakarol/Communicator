@@ -46,8 +46,47 @@ function validateDate(){
   }
   if(isNan(inputDate[0]) || isNan(inputDate[1]) || isNan(inputDate[2]) || inputDate == null){
     isCorrect = false;
-
   }
+
+
+
+
+      if (isCorrect) {
+  	var month = inputDate[1];
+	var year = inputDate[0];
+	var date = inputDate[2];
+
+            var ListofDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+            if (month == 1 || month > 2) {
+                if (date > ListofDays[month - 1]) {
+            	    isCorrect = false;
+                }
+            }
+
+            if (month == 2) {
+                var leapYear = false;
+                if ((!(year % 4) && year % 100) || !(year % 400)) {
+                    leapYear = true;
+                }
+
+                if ((leapYear == false) && (date >= 29)) {
+            	    isCorrect = false;
+                }
+
+                if ((leapYear == true) && (date > 29)) {
+            	    isCorrect = false;
+                }
+
+            }
+
+        }
+
+        else {
+            isCorrect = false;
+        }
+
+
 
 
 
@@ -67,17 +106,18 @@ function validateDate1(){
     setHour();
   }
 
-  if (currentInputArray.length !== 3) {
-    setDate();
-    setHour();  }
-
-
-  if(currentInputArray[0] < 1 || currentInputArray[0].length !== 4){
+  if (currentInputArray.length != 3) {
     setDate();
     setHour();
   }
 
-  if (currentInputArray[1] < 1|| currentInputArray[1] > 12 || currentInputArray[1].length != 2) {
+
+  if(currentInputArray[0] < 1 || currentInputArray[0].length != 4 || isNaN(currentInputArray[0])){
+    setDate();
+    setHour();
+  }
+
+  if (currentInputArray[1] < 1|| currentInputArray[1] > 12 || currentInputArray[1].length != 2 || isNaN(currentInputArray[1])) {
     setDate();
     setHour();
   }
@@ -87,21 +127,56 @@ function validateDate1(){
     setHour();
   }
 
+
+var month = currentInputArray[1];
+var year = currentInputArray[0];
+var date = currentInputArray[2];
+var isValid = true;
+        var ListofDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+        if (month == 1 || month > 2) {
+            if (date > ListofDays[month - 1]) {
+              isValid = false;
+            }
+        }
+
+        if (month == 2) {
+            var leapYear = false;
+            if ((!(year % 4) && year % 100) || !(year % 400)) {
+                leapYear = true;
+            }
+
+            if ((leapYear == false) && (date >= 29)) {
+              isValid = false;
+
+            }
+
+            if ((leapYear == true) && (date > 29)) {
+              isValid = false;
+
+            }
+        }
+        if(!isValid){
+            setDate();
+            setHour();
+        }
+
+
 }
 
 function validateHour(){
   var input = document.getElementById('hour').value;
   var inputDate = input.split(':');
 
-  if(inputDate.length !== 2){
+  if(inputDate.length != 2){
     setDate();
     setHour();
   }
-  if(inputDate[0] <= 0 || inputDate[0] >= 24 || inputDate[0].length != 2){
+  if(inputDate[0] <= 0 || inputDate[0] >= 24 || inputDate[0].length != 2 || isNaN(inputDate[0])) {
     setDate();
     setHour();
   }
-  if(inputDate[1] <= 0 || inputDate[1] >= 60 || inputDate[1].length != 2){
+  if(inputDate[1] <= 0 || inputDate[1] >= 60 || inputDate[1].length != 2 || isNaN(inputDate[1])){
     setDate();
     setHour();
   }

@@ -13,12 +13,12 @@ function listOfStyles() {
     }
 }
 
-function changeStyle(styleTitle) {
+function changeStyle(styleName) {
     var styles = document.styleSheets;
     for (var i = 0; i < styles.length; i++){
-        styles[i].disabled = (styles[i].title != styleTitle);
+        styles[i].disabled = (styles[i].title != styleName);
     }
-    setCookie("styleTitle", styleTitle, 10);
+    setCookie("styleName", styleName, 10);
 }
 
 function setCookie(cname, cvalue, exdays) {
@@ -45,9 +45,9 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-    var styleTitle = getCookie("styleTitle");
-    if (styleTitle != "") {
-        changeStyle(styleTitle);
+    var styleName = getCookie("styleName");
+    if (styleName != "") {
+        changeStyle(styleName);
     } else {
         var styles = document.styleSheets;
         for (var i = 0; i < styles.length; i++){
